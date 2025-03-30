@@ -155,7 +155,6 @@ Here are some screenshots illustrating the functionality. (Make sure these image
 
 ![Search Functionality](./Images/Search_Functionality.png)
 
-_(Adjust the paths if your images are located in a different directory.)_
 
 ---
 
@@ -191,8 +190,5 @@ This project is open source and available under the [MIT License](LICENSE). Feel
 
 - [PokéAPI](https://pokeapi.co/) for providing the Pokémon data.
 - Pokémon community for their support and resources.
-- All contributors who have helped improve this project.
-
 ---
 
-**Happy Coding!** If you have any questions or issues, please open an [issue](https://github.com/your-username/pokedex/issues) or reach out. Enjoy exploring the world of Pokémon!
