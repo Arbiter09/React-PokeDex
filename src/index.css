@@ -588,3 +588,111 @@ nav input {
     align-items: center;
   }
 }
+
+/* Moves section styles - with grid layout fixes */
+.moves-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.moves-count {
+  font-size: 0.9rem;
+  color: #a0a0b0;
+}
+
+.moves-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.moves-tab {
+  padding: 0.5rem 1rem;
+  background-color: #2a2d3e;
+  border: 1px solid #3d4056;
+  border-radius: 4px;
+  color: #a0a0b0;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.moves-tab:hover:not(.active) {
+  background-color: #3a3f56;
+  color: #ffffff;
+}
+
+.moves-tab.active {
+  background-color: #e74c8c;
+  color: white;
+  border-color: #e74c8c;
+  box-shadow: 0 2px 4px rgba(231, 76, 140, 0.3);
+}
+
+.moves-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.move-button {
+  padding: 0.75rem 1rem;
+  background-color: #1a1d2e;
+  border: 1px solid #2a2d3e;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  font-weight: 500;
+}
+
+.move-button:hover {
+  background-color: #262a3e;
+}
+
+/* Placeholder for empty grid spots */
+.move-placeholder {
+  background-color: transparent;
+  border-color: transparent;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.moves-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pagination-button {
+  padding: 0.5rem 1.25rem;
+  background-color: #2a2d3e;
+  border: 1px solid #3d4056;
+  border-radius: 4px;
+  color: #a0a0b0;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #3a3f56;
+  color: #ffffff;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-size: 0.9rem;
+  color: #a0a0b0;
+}
+
