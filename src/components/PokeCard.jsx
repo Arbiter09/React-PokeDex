@@ -171,6 +171,26 @@ export default function PokeCard(props) {
                 )
             })}
         </div>
+
+        <div className="info-card">
+            <div className="info-row">
+                <span className="info-label">Height:</span>
+                <span>{height / 10} m</span>
+            </div>
+            <div className="info-row">
+                <span className="info-label">Abilities:</span>
+                <div className="ability-list">
+                    {abilities.map((ab, index) => (
+                        <span key={index} className="ability-item">
+                            {ab.ability.name.replaceAll('-', ' ')}
+                        </span>
+                    ))}
+                </div>
+            </div>
+        </div>
+
+        
+
         </div>
     )
 }
